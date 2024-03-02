@@ -1,0 +1,40 @@
+{
+  "name": "techspace",
+  "version": "1.0.0",
+  "description": "this techspace owner is saroj gt",
+  "main": "./src/index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "email dev",
+    "export": "email export",
+    "start": " tsc && dotenvx run -- nodemon ./dist/index.js"
+  },
+  "keywords": [
+    "techspace",
+    "sarojgt",
+    "saroj"
+  ],
+  "author": "sarojgt",
+  "license": "ISC",
+  "devDependencies": {
+    "@dotenvx/dotenvx": "^0.24.0",
+    "@types/assert": "^1.5.10",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.19"
+  },
+  "dependencies": {
+    "@react-email/components": "^0.0.15",
+    "@react-email/render": "^0.0.12",
+    "@types/nodemailer": "^6.4.14",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "firebase": "^10.8.0",
+    "firebase-admin": "^12.0.0",
+    "nodemailer": "^6.9.11",
+    "nodemon": "^3.0.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}

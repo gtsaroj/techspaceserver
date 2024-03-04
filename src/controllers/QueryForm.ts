@@ -27,7 +27,9 @@ export const SubmitQueryForm = AsyncHandler(
     transportor.sendMail(emailForm, (err, success) => {
       if (!success) {
         console.log(`Error occured while sending : ${err}`);
-        return new ApiError("Your message failed", 400, err?.message);
+        return res
+          .status(400)
+          .json(new ApiError("Your message failed", 400, err?.message));
       }
       console.log(`Succesfully : ${success}`);
       return res
